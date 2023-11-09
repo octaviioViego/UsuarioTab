@@ -71,6 +71,7 @@ public class PrimaryController implements Initializable {
     private void buscarUsarioById(ActionEvent event) throws IOException {
         //this.tablaUsuarios.
        this.tablaUsuarios.getItems().clear();
+     
         try {
 
             double buscarPorID = Double.parseDouble(this.txtIdUsuario.getText());
