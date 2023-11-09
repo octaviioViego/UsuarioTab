@@ -1,0 +1,11 @@
+Nombre del Equipo:DataMinds Consulting
+
+Nombre del Programador: Arroyo Velasco Fernando Octavio
+
+Matricula: 19-003-0088
+
+Correo electrónico: octavio.arroyo@estudiante.uacm.edu.mx
+
+Celular: 5617612870
+
+Se ocupo Netabean para la creacion del codigo, y el SceneBuilder para mostrar la tabla de los clientes. AL igual que se ocupo Xammp para crear la base de datos
