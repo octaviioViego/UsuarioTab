@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="782.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.usuariotab.AgregarUsuarioCompletoController">
+   <children>
+      <Text layoutX="14.0" layoutY="29.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Agregar Usuario" wrappingWidth="134.2265625">
+         <font>
+            <Font name="Georgia" size="16.0" />
+         </font>
+      </Text>
+      <GridPane layoutX="23.0" layoutY="53.0" prefHeight="281.0" prefWidth="340.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="148.0" minWidth="10.0" prefWidth="148.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="188.0" minWidth="10.0" prefWidth="188.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Nombre:" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Apellido paterno:" GridPane.rowIndex="1" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Apellido materno:" GridPane.rowIndex="2" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Telefono celular:" GridPane.rowIndex="3" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Telefono casa:" GridPane.rowIndex="4" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Curp:" GridPane.rowIndex="5" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Numero de seguro social:" GridPane.rowIndex="6" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Nivel educativo:" GridPane.rowIndex="7" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Rfc:" GridPane.rowIndex="8" />
+            <TextField fx:id="txtNombre" prefHeight="25.0" prefWidth="262.0" GridPane.columnIndex="1" />
+            <TextField fx:id="txtApellidoPaterno" prefHeight="25.0" prefWidth="262.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <TextField fx:id="txtApellidoMaterno" prefHeight="25.0" prefWidth="262.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <TextField fx:id="txtTelefonoCelular" prefHeight="25.0" prefWidth="262.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <TextField fx:id="txtTelefonoCasa" prefHeight="25.0" prefWidth="262.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <TextField fx:id="txtCurp" prefHeight="25.0" prefWidth="262.0" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+            <TextField fx:id="txtNumerodeSeguroSocial" prefHeight="25.0" prefWidth="262.0" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+            <TextField fx:id="txtRfc" prefHeight="25.0" prefWidth="262.0" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+            <ChoiceBox fx:id="menuNivelEducativo" prefHeight="25.0" prefWidth="123.0" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+         </children>
+      </GridPane>
+      <GridPane layoutX="391.0" layoutY="53.0" prefHeight="168.0" prefWidth="340.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="148.0" minWidth="10.0" prefWidth="148.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="188.0" minWidth="10.0" prefWidth="188.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Direccion:" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Numero de cuenta:" GridPane.rowIndex="2" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Contraseña:" GridPane.rowIndex="3" />
+            <TextField fx:id="txtDireccion" prefHeight="25.0" prefWidth="262.0" GridPane.columnIndex="1" />
+            <TextField fx:id="txtNumerodeCuenta" prefHeight="25.0" prefWidth="262.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <TextField fx:id="txtContraseña" prefHeight="25.0" prefWidth="262.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Puesto a desempeñar:" GridPane.rowIndex="1" />
+            <ChoiceBox fx:id="menuPuesto" prefHeight="25.0" prefWidth="144.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+         </children>
+      </GridPane>
+      <Button fx:id="btnCancelar" layoutX="162.0" layoutY="351.0" mnemonicParsing="false" onAction="#cancelar" prefHeight="25.0" prefWidth="87.0" text="Cancelar" />
+      <Button fx:id="btnAgregar" layoutX="38.0" layoutY="351.0" mnemonicParsing="false" onAction="#agregarUsuario" prefHeight="25.0" prefWidth="87.0" text="Aceptar" />
+      <Text layoutX="391.0" layoutY="250.0" strokeType="OUTSIDE" strokeWidth="0.0" text="¿Cuenta con familia?" />
+      <VBox layoutX="541.0" layoutY="233.0" prefHeight="43.0" prefWidth="168.0">
+         <children>
+            <RadioButton fx:id="RbnSicuentoconFamilia" mnemonicParsing="false" onAction="#registroDeFamiliares" text="Si cuento con familiares">
+               <toggleGroup>
+                  <ToggleGroup fx:id="familiares" />
+               </toggleGroup>
+            </RadioButton>
+            <RadioButton fx:id="RdbNotengoFamilia" mnemonicParsing="false" onAction="#registroDeFamiliares" text="No cuento con familiares" toggleGroup="$familiares" />
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

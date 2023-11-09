@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="606.0" prefWidth="764.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.usuariotab.AgregarInformacionFamiliarController">
+   <children>
+      <Text layoutX="22.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Registro de Familiar">
+         <font>
+            <Font name="Tahoma" size="16.0" />
+         </font>
+      </Text>
+      <GridPane layoutX="22.0" layoutY="65.0" prefHeight="135.0" prefWidth="293.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="141.0" minWidth="10.0" prefWidth="101.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="192.0" minWidth="10.0" prefWidth="192.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Nombre:" GridPane.rowIndex="1" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Apellido paterno:" GridPane.rowIndex="2" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Apellido materno:" GridPane.rowIndex="3" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Vivo/Finito" GridPane.rowIndex="4" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Padre" />
+            <TextField fx:id="txtNombrePadre" prefHeight="25.0" prefWidth="262.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <TextField fx:id="txtApellidoPaternoPadre" prefHeight="25.0" prefWidth="262.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <TextField fx:id="txtApellidoMaternoPadre" prefHeight="25.0" prefWidth="262.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <ChoiceBox fx:id="menuVivoFinitoPadre" prefHeight="25.0" prefWidth="105.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+         </children>
+      </GridPane>
+      <Button fx:id="btnRegistrarDatosFamiliares" layoutX="28.0" layoutY="515.0" mnemonicParsing="false" onAction="#registrarDatosFamiliares" prefHeight="25.0" prefWidth="101.0" text="Registrar" />
+      <Button fx:id="btnCancelar" layoutX="240.0" layoutY="515.0" mnemonicParsing="false" onAction="#cancelar" prefHeight="25.0" prefWidth="101.0" text="Cancelar" />
+      <GridPane layoutX="413.0" layoutY="65.0" prefHeight="135.0" prefWidth="293.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="141.0" minWidth="10.0" prefWidth="101.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="192.0" minWidth="10.0" prefWidth="192.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Nombre:" GridPane.rowIndex="1" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Apellido paterno:" GridPane.rowIndex="2" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Apellido materno:" GridPane.rowIndex="3" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Vivo/Finito" GridPane.rowIndex="4" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Madre" />
+            <TextField fx:id="txtNombreMadre" prefHeight="25.0" prefWidth="262.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <TextField fx:id="txtApellidoPaternoMadre" prefHeight="25.0" prefWidth="262.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <TextField fx:id="txtApellidoMaternoMadre" prefHeight="25.0" prefWidth="262.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <ChoiceBox fx:id="menuVivoFinitoMadre" prefHeight="25.0" prefWidth="101.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+         </children>
+      </GridPane>
+      <GridPane layoutX="16.0" layoutY="341.0" prefHeight="135.0" prefWidth="293.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="141.0" minWidth="10.0" prefWidth="111.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="192.0" minWidth="10.0" prefWidth="182.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Nombre:" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Apellido paterno:" GridPane.rowIndex="1" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Apellido materno:" GridPane.rowIndex="2" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Edad:" GridPane.rowIndex="3" />
+            <TextField fx:id="txtNombrePareja" prefHeight="25.0" prefWidth="262.0" GridPane.columnIndex="1" />
+            <TextField fx:id="txtApellidoPaternoPareja" prefHeight="25.0" prefWidth="262.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <TextField fx:id="txtApellidoMaternoPareja" prefHeight="25.0" prefWidth="262.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <TextField fx:id="txtEdadPareja" prefHeight="25.0" prefWidth="262.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+         </children>
+      </GridPane>
+      <RadioButton fx:id="btnHijosSi" layoutX="494.0" layoutY="272.0" mnemonicParsing="false" onAction="#hijosSioNo" text="Si">
+         <toggleGroup>
+            <ToggleGroup fx:id="hijosSioNo" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="btnHijosNo" layoutX="494.0" layoutY="298.0" mnemonicParsing="false" onAction="#hijosSioNo" text="No" toggleGroup="$hijosSioNo" />
+      <Text layoutX="413.0" layoutY="285.0" strokeType="OUTSIDE" strokeWidth="0.0" text="¿Tiene hijos?" />
+      <GridPane layoutX="426.0" layoutY="332.0" prefHeight="135.0" prefWidth="293.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="141.0" minWidth="10.0" prefWidth="111.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="192.0" minWidth="10.0" prefWidth="182.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Nombre:" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Apellido paterno:" GridPane.rowIndex="1" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Apellido materno:" GridPane.rowIndex="2" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Edad:" GridPane.rowIndex="3" />
+            <TextField fx:id="txtNombreHijo" prefHeight="25.0" prefWidth="262.0" GridPane.columnIndex="1" />
+            <TextField fx:id="txtApellidoPaternoHijo" prefHeight="25.0" prefWidth="262.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <TextField fx:id="txtApellidoMaternoHijo" prefHeight="25.0" prefWidth="262.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <TextField fx:id="txtEdadHijo" prefHeight="25.0" prefWidth="262.0" GridPane.columnIndex="1" GridPane.rowIndex="3" /> 
+         </children>
+      </GridPane>
+      <Text layoutX="25.0" layoutY="285.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Esposa o Concubina:" />
+      <RadioButton fx:id="btnEsposa" layoutX="162.0" layoutY="272.0" mnemonicParsing="false" onAction="#esposaOconcubina" text="Esposa">
+         <toggleGroup>
+            <ToggleGroup fx:id="esposaOconcubina" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="btnConcubina" layoutX="163.0" layoutY="298.0" mnemonicParsing="false" onAction="#esposaOconcubina" text="Concubina" toggleGroup="$esposaOconcubina" />
+      <Text layoutX="16.0" layoutY="246.0" strokeType="OUTSIDE" strokeWidth="0.0" text="¿Tienes esposa o cuncubina?" />
+      <RadioButton fx:id="rbnEsposaSi" layoutX="177.0" layoutY="233.0" mnemonicParsing="false" onAction="#registrarEsposaConcubina" text="Si">
+         <toggleGroup>
+            <ToggleGroup fx:id="registrarEsposaConcubina" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="btnEsposaNo" layoutX="222.0" layoutY="233.0" mnemonicParsing="false" onAction="#registrarEsposaConcubina" text="No" toggleGroup="$registrarEsposaConcubina" />
+   </children>
+</AnchorPane>
